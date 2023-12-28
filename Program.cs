@@ -8,8 +8,11 @@ namespace ConsoleApp1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine("Введите целое число из отрезка [10, 99]");
+            int N = Int32.Parse(Console.ReadLine());
+           
         }
     }
 }
