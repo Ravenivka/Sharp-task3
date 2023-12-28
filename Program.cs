@@ -28,8 +28,15 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Введите целое число из отрезка [10, 99]");
             int N = Int32.Parse(Console.ReadLine());
-            string msg = "Наибольшая цифра: " + Maximka(N);
-            Console.WriteLine(msg);
+            if ((N < 10) ^ (N > 99))
+            {
+                Console.WriteLine("Число не попадает в диапазон");
+            }
+            else
+            {
+                string msg = "Наибольшая цифра: " + Maximka(N);
+                Console.WriteLine(msg);
+            }
         }
     }
 }
